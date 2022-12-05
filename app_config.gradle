@@ -1,0 +1,16 @@
+ext {
+
+    app_android = [
+            applicationId: "com.zxmjs.compose",
+            minSdk       : 21,
+            targetSdk    : 31,
+            versionCode  : 1,
+            versionName  : "1.0",
+            compileSdk : 31
+    ]
+
+    // 定义一个包名，用于存放APT生成的所有类文件
+    packageNameForAPT = "com.zxmjs.new_modular_compose";
+
+
+}

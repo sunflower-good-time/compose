@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.zxmjs.model.common.view.view.CenterButton
+            android:id="@+id/btn_navigation_home"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_56"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/app_navigation_home_selector"
+            android:drawablePadding="@dimen/margin_4"
+            android:text="首页"
+            android:textColor="@color/yx_app_navigation_text_color_selector"
+            android:textSize="@dimen/text_size_9" />
+
+
+        <com.zxmjs.model.common.view.view.CenterButton
+            android:id="@+id/btn_navigation_follow"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_56"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/app_navigation_follow_selector"
+            android:drawablePadding="@dimen/margin_4"
+            android:text="关注"
+            android:textColor="@color/yx_app_navigation_text_color_selector"
+            android:textSize="@dimen/text_size_9" />
+
+        <com.zxmjs.model.common.view.view.CenterButton
+            android:id="@+id/btn_navigation_discover"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_56"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/app_navigation_discover_selector"
+            android:drawablePadding="@dimen/margin_4"
+            android:text="发现"
+            android:textColor="@color/yx_app_navigation_text_color_selector"
+            android:textSize="@dimen/text_size_9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fl_navigation_message"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_56"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.zxmjs.model.common.view.view.CenterButton
+                android:id="@+id/btn_navigation_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/app_navigation_message_selector"
+                android:drawablePadding="@dimen/margin_4"
+                android:text="消息"
+                android:textColor="@color/yx_app_navigation_text_color_selector"
+                android:textSize="@dimen/text_size_9" />
+
+            <android.widget.Space
+                android:id="@+id/space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.zxmjs.model.common.view.view.CenterButton
+            android:id="@+id/btn_navigation_mine"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_56"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/app_navigation_mine_selector"
+            android:drawablePadding="@dimen/margin_4"
+            android:text="我的"
+            android:textColor="@color/yx_app_navigation_text_color_selector"
+            android:textSize="@dimen/text_size_9" />
+    </LinearLayout>
+
+
+    </merge>
+</layout>
